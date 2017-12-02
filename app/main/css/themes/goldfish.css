@@ -1,0 +1,50 @@
+:root {
+  /* Main fonts and colors */
+  --main-background-color: #E0E4CC;
+  --main-font: system;
+  --main-font-color: #FA6900;
+  --main-input-background-color: #000000;
+  --main-autocomplete-color: #E0E4CC;
+  --main-title-color: #FA6900;
+
+  /* border styles */
+  --main-border: 1px solid #FA6900; /* 696767 */
+  --main-input-background: #2B2B2B;
+
+  /* Secondary fonts and colors */
+  --secondary-font-color: #000000;
+
+  /* results list */
+  --result-title-color: #FA6900;
+  --result-subtitle-color: #E0E4CC;
+  --result-background: #2B2B2B;
+  --result-total-background: #2B2B2B;
+
+  /* selected result */
+  --selected-result-title-color: #FA6900;
+  --selected-result-subtitle-color: var(--result-subtitle-color);
+  --selected-result-background: #000000;
+
+  /* scrollbar */
+  --scroll-background: var(--result-total-background);
+  --scroll-track: var(--result-total-background);
+  --scroll-track-active: var(--scroll-track);
+  --scroll-track-hover: #555555;
+  --scroll-thumb: #FA6900; /* inactive */
+  --scroll-thumb-hover: #FA6900;
+  --scroll-thumb-active: #DF5D00; /* thumb clicked */
+  --scroll-width: 3px;
+  --scroll-height: 3px;
+
+  /* inputs */
+  --preview-input-background: #000000;
+  --preview-input-color: var(--main-font-color);
+  --preview-input-border: 1px solid var(--main-font-color);
+
+  /* filter for previews */
+  --preview-filter: invert(100%) hue-rotate(180deg) contrast(80%);
+
+  /* */
+  --unfocus-opacity: 1;
+  --unfocus-filter: blur(1px);
+}

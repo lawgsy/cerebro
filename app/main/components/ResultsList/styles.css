@@ -5,10 +5,12 @@
   border-top: var(--main-border);
   height: 100%;
   position: relative;
+  background: var(--result-total-background);
 }
 
 .unfocused {
-  opacity: .5;
+  opacity: var(--unfocus-opacity, 0.5);
+  filter: var(--unfocus-filter);
 }
 
 .resultsList {

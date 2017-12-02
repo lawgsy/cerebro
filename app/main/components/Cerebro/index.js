@@ -401,16 +401,18 @@ class Cerebro extends Component {
     const { mainInputFocused } = this.state
     return (
       <div className={styles.search}>
-        {this.renderAutocomplete()}
-        <div className={styles.inputWrapper}>
-          <MainInput
-            value={this.props.term}
-            ref="mainInput"
-            onChange={this.props.actions.updateTerm}
-            onKeyDown={this.onKeyDown}
-            onFocus={this.onMainInputFocus}
-            onBlur={this.onMainInputBlur}
-          />
+        <div className={styles.searchWrapper}>
+          {this.renderAutocomplete()}
+          <div className={styles.inputWrapper}>
+            <MainInput
+              value={this.props.term}
+              ref="mainInput"
+              onChange={this.props.actions.updateTerm}
+              onKeyDown={this.onKeyDown}
+              onFocus={this.onMainInputFocus}
+              onBlur={this.onMainInputBlur}
+            />
+          </div>
         </div>
         <ResultsList
           results={this.props.results}

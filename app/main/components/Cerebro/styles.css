@@ -12,6 +12,10 @@
   height: 45px;
 }
 
+.searchWrapper {
+  background-color: var(--main-input-background-color);
+}
+
 .autocomplete {
   position: absolute;
   z-index: 1;
@@ -21,7 +25,7 @@
   padding: 0 10px;
   line-height: 46px;
   box-sizing: border-box;
-  color: var(--secondary-font-color);
+  color: var(--main-autocomplete-color, var(--secondary-font-color));
   white-space: pre;
 }
 
